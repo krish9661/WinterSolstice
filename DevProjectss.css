@@ -313,3 +313,17 @@ article.hemisphere p {
   color: white;
 }
 
+/* ADD SOME SNOW */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  user-select: none;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+      transform: translateY(200vh);
+  }
+}
